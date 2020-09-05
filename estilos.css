@@ -1,0 +1,23 @@
+header{
+
+   
+    text-align: center;
+   
+    font-family: sans-serif;
+}
+#fondo{
+    width: 100%;
+}
+#logo{
+    padding: 50px;
+    width: 100%;
+}
+nav > a {
+    color: lightblue;
+    text-decoration: transparent;
+    margin-right: 20px;
+}
+h3{
+    text-align: center;
+    color: antiquewhite;
+}
