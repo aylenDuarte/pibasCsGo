@@ -44,10 +44,7 @@ p, h6{
     font-size: 20px;
     text-indent: 20px;
 }
-#csgo{
-    width: 100%;
-    margin-left: 150px;
-}
+
 table {
     width:100%;
     font:normal 16px Arial;
@@ -65,10 +62,12 @@ table th {
     color: rgb(240, 109, 245);
     font-size: 20px;
 }
-#csgo2{
-    margin-top: 200px;
-}
+
 .labels{
     color: rgb(240, 109, 245);
     font-size: 20px;
+}
+.col-md-4 {
+    margin-left: 150px;
+    
 }
