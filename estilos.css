@@ -21,3 +21,52 @@ h3{
     text-align: center;
     color: antiquewhite;
 }
+h2, h4 {
+    padding: 50px;
+    color: rgb(175, 69, 170);
+    font-size: 40px;
+    
+}
+
+#global{
+    
+    background-color: rgba(49, 46, 46, 0.527);
+    padding: 10px;
+    width: 80%;
+    margin: 0px auto;
+    
+}
+
+.espacio{
+    padding: 20px;
+}
+p{
+    color: hotpink;
+    text-align: justify;
+    font-size: 20px;
+    text-indent: 20px;
+}
+#csgo{
+    width: 100%;
+    margin-left: 150px;
+}
+table {
+    width:100%;
+    font:normal 16px Arial;
+    text-align:center;
+    border-collapse:collapse;
+}
+table th {
+    font:bold 15px Arial;
+    background-color:rgba(99, 109, 240, 0.548);
+}
+.fila{
+    background-color:rgba(175, 140, 231, 0.712);
+}
+.lista{
+    color: rgb(240, 109, 245);
+    font-size: 20px;
+}
+#csgo2{
+    margin-top: 200px;
+}
