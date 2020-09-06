@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pibas - Contacto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/imgs/pibas.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body background="/imgs/fondo3.jpg" id="fondo">
+    <header >
+        <nav class="navbar navbar-dark bg-dark">
+            <a href="index.html">Inicio</a>
+            <a href="que_es.html">Qué es CS:GO</a>
+            <a href="quienes_somos.html">Quienes somos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <h2>
+            Contacto
+        </h2>
+    </header>
+    <hr style="border:15px;"><hr style="border:2px;">
+    <div id="section">
+        <p>¿Te interesa formar parte de nuestro grupo? ¡Contactanos!</p>
+    </div>
+    <hr style="border:15px;"><hr style="border:2px;">
+    <div id="article1">
+        <form class="was-validated" action="#">
+            <div class="form-group">
+                <label for="nombre" class="labels">Nombre*</label>
+                <input id="nombre" class="form-control" type="text" placeholder="Escriba su nombre" required="">
+                <div class="valid-feedback">Nombre valido</div>
+                <div class="invalid-feedback">*Dato obligatorio.</div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail" class="labels">Dirección de email*</label>
+                <input id="exampleInputEmail" class="form-control" type="email" aria-describedby="emailHelp" placeholder="Escriba su dirección de email" required="">
+                <div class="invalid-feedback">*Dato obligatorio. Debe tener formato de email</div>
+            </div>
+            <div class="form-group">
+                <label for="msj" class="labels">Mensaje</label>
+                <textarea class="form-control" id="msj" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+    </div>
+
+    
+</body>
+</html>
