@@ -222,7 +222,8 @@
     <div id="article4">
         <h2>¡Adivinanza!</h2>
 	    <h2>¿Cuántas rondas duró la partida profesional de CS:GO mas larga de la historia?</h2>
-        <p class="adiv">¿Cuál es tu nombre? <input type="text" id="nombre"></p>
+        <p class="adiv">¿Cuál es tu nombre? </p>
+        <p class="adiv"><input type="text" id="nombre"></p>
         <div class="col text-center">
             <button class="btn btn-secondary" onclick="jugar_ahora()" id="button">Jugar</button>
         </div>
@@ -272,7 +273,7 @@
                         }
                     }
 
-                    document.getElementById("rdo").innerHTML="El número era: <strong>" + resp_corr + "</strong>."
+                    document.getElementById("rdo").innerHTML="Respuesta correcta: <strong>" + resp_corr + "</strong>."
                 }
 
             }
