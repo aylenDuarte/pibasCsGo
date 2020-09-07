@@ -26,15 +26,15 @@
     <hr style="border:15px;"><hr style="border:2px;">
     <div class="row" id="section">
         
-        <div class="col-md-4">
+        <div class="col-md-6">
             <br>
             <img class = "img-fluid" id="csgo" src="imgs/csgo.png" alt="csgo">
         </div>
       
-        <div class="col-md-4">
+        <div class="col-md-6">
             <br> <br>
             <p class="p_que_es">
-                Global Offensive (CS:GO) es un videojuego de disparos en primera persona desarrollado por Valve Corporation 
+                Counter-Strike: Global Offensive (CS:GO) es un videojuego de disparos en primera persona desarrollado por Valve Corporation 
                 en cooperación con Hidden Path Entertainment, y es el cuarto juego de la saga Counter-Strike, sin contar Counter-Strike: 
                 Online. 
             </p>
@@ -44,7 +44,7 @@
     </div>
     <div class="row" id="article1">
 
-        <div class="col-md-4">
+        <div class="col-md-6">
             <h4>
                 Modos de juego
             </h4>
@@ -67,8 +67,8 @@
                 <li>Competitivo (matchmaking)</li>
             </ul>
         </div>
-        <div class="col-md-4">
-            <br> <br> <br> <br> <br> <br>
+        <div class="col-md-6">
+            <br> <br> <br> <br>  
             <img class = "img-fluid" id="csgo2" src="imgs/csgo2.jpg" alt="csgo">
         </div>
         
@@ -211,13 +211,88 @@
         </table>
         
     </div>
-    <div id="footer">
+    <hr style="border:15px;"><hr style="border:2px;">
+    <div id="article3">
         <p> El juego puede descargarse de forma gratuita desde la plataforma <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"> Steam</a>.
             ¡Sólo necesitas acceder a tu cuenta de Steam! Si aun no tenés cuenta, ¡registrarse es gratis!
         </p>
 
     </div>
+    <hr style="border:15px;"><hr style="border:2px;">
+    <div id="article4">
+        <h2>¡Adivinanza!</h2>
+	    <h2>¿Cuántas rondas duró la partida profesional de CS:GO mas larga de la historia?</h2>
+        <p class="adiv">¿Cuál es tu nombre? <input type="text" id="nombre"></p>
+        <div class="col text-center">
+            <button class="btn btn-secondary" onclick="jugar_ahora()" id="button">Jugar</button>
+        </div>
+	    
+	    <h2 id="rdo"></h2>
+	    <script>
+            function jugar_ahora() {
 
+
+                var cant_intentos = 3;
+                var acerto = false;
+                var resp_corr = 137;
+                var numero;
+
+                var nombre=document.getElementById("nombre").value;
+
+                if(nombre=="")
+                {
+                    alert("Por favor, ingrese su  nombre para JUGAR");
+                }
+                else
+                {
+                    while(cant_intentos>0 && acerto!=true)
+                    {
+                        cant_intentos--;
+                        numero= parseInt( prompt("Ingrese su respuesta"));
+                        if (numero==resp_corr)
+                        {
+                            alert("Correcto!");
+                            acerto=true;
+                        }
+                        else
+                        {
+                            if ((numero<resp_corr) && (cant_intentos>0)) {
+                            alert("PISTA: es mayor. " + "Te queda/n " + cant_intentos + " intento/s.");
+                            }
+                            else if (numero>resp_corr && cant_intentos>0) {
+                            alert("PISTA: es menor. " + "Te queda/n " + cant_intentos + " intento/s.");
+                            }   
+                            else if (cant_intentos == 0) {
+                                alert("Te quedaste sin intentos. Perdiste.");
+                            }                                                       
+                            else
+                            {
+                            alert("No ingresaste una opción válida. " + "Te queda/n " + cant_intentos + " intento/s.");
+                            }
+                        }
+                    }
+
+                    document.getElementById("rdo").innerHTML="El número era: <strong>" + resp_corr + "</strong>."
+                }
+
+            }
+
+	    </script>
+
+    </div>
+    <hr style="border:15px;"><hr style="border:2px;">
+    <div id="footer1">
+        <p>Si te interesa leer mas sobre esa partida, hace click <a href="https://libero.pe/esports/1564891-counter-strike-equipos-juegan-137-puntos-rompen-record-partida-larga-esports-gunrunners-esuba">acá</a>. </p>
+    </div>
+    <hr style="border:15px;"><hr style="border:2px;">
+    <div class="footer2">
+        <nav class="navbar navbar-dark bg-dark">
+            <a href="index.html">Inicio</a>
+            <a href="que_es.html">Qué es CS:GO</a>
+            <a href="quienes_somos.html">Quienes somos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
 
 </body>
 </html>

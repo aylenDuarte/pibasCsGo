@@ -13,20 +13,21 @@ header {
 nav > a {
     color: lightblue;
     text-decoration: transparent;
-    margin-right: 20px;
+    justify-content: space between;
 }
 h3{
     text-align: center;
     color: antiquewhite;
 }
-h2, h4 {
+h2 {
     padding: 50px;
     color: rgb(175, 69, 170);
     font-size: 40px;
+    text-align: center;
     
 }
 
-#section, #article1, #article2, header, #footer {
+#section, #article1, #article2, header, #article3, #article4, #footer1, .footer2 {
     
     background-color: rgba(49, 46, 46, 0.527);
     padding: 10px;
@@ -35,14 +36,13 @@ h2, h4 {
     
 }
 
-.espacio{
-    padding: 20px;
-}
-p, h6{
+
+p, h6, h4{
     color: hotpink;
     text-align: justify;
     font-size: 20px;
     text-indent: 20px;
+    padding: 20px;
 }
 
 table {
@@ -54,9 +54,11 @@ table {
 table th {
     font:bold 15px Arial;
     background-color:rgba(99, 109, 240, 0.548);
+    color: rgb(61, 4, 99);
 }
 .fila{
     background-color:rgba(175, 140, 231, 0.712);
+    color: rgb(50, 3, 82);
 }
 .lista{
     color: rgb(240, 109, 245);
@@ -67,7 +69,7 @@ table th {
     color: rgb(240, 109, 245);
     font-size: 20px;
 }
-.col-md-4 {
-    margin-left: 150px;
-    
+.adiv{
+    color: hotpink;
+    text-align: center;
 }
