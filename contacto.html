@@ -18,37 +18,39 @@
             <a href="contacto.html">Contacto</a>
         </nav>
         <h2>
-            Contacto
+            ¿Te interesa formar parte de nuestro grupo? ¡Contactanos!
         </h2>
     </header>
-    <hr style="border:15px;"><hr style="border:2px;">
-    <div id="section">
-        <p>¿Te interesa formar parte de nuestro grupo? ¡Contactanos!</p>
-    </div>
+   
     <hr style="border:15px;"><hr style="border:2px;">
     <div id="article1">
-        <form class="was-validated" action="#" >
-            <div class="form-group">
-                <label for="nombre" class="labels">Nombre*</label>
-                <input id="nombre" class="form-control" type="text" placeholder="Escriba su nombre" required="">
-                <div class="valid-feedback">Nombre valido</div>
-                <div class="invalid-feedback">*Dato obligatorio.</div>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail" class="labels">Dirección de email*</label>
-                <input id="exampleInputEmail" class="form-control" type="email" aria-describedby="emailHelp" placeholder="Escriba su dirección de email" required="">
-                <div class="valid-feedback">Email valido</div>
-                <div class="invalid-feedback">*Dato obligatorio. Debe tener formato de email</div>
-            </div>
-            <div class="form-group">
-                <label for="msj" class="labels">Mensaje</label>
-                <textarea class="form-control" id="msj" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" value="send">Enviar</button>
-        </form>
-
+        <div class="col-md-6 offset-md-3">
+            <form class="was-validated" action="https://formspree.io/mqkgzzql" method="POST" id="formID" >
+                <div class="form-group">
+                    <label for="nombre" class="labels">Nombre*</label>
+                    <input id="nombre" class="form-control" type="text" placeholder="Escriba su nombre" name="nombre" required>
+                    <div class="valid-feedback">Nombre valido</div>
+                    <div class="invalid-feedback">*Dato obligatorio.</div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail" class="labels">Dirección de email*</label>
+                    <input id="exampleInputEmail" class="form-control" type="email" aria-describedby="emailHelp" placeholder="ejemplo@gmail.com" name="senderEmail" required>
+                    <div class="valid-feedback">Email valido</div>
+                    <div class="invalid-feedback">*Dato obligatorio. Debe tener formato de email</div>
+                </div>
+                <div class="form-group">
+                    <label for="msj" class="labels">Mensaje</label>                        
+                    <textarea class="form-control" id="msj" form="formID" rows="3" name="mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" value="send">Enviar</button>
+            </form>
+        </div>
     </div>
-
+    <hr style="border:15px;"><hr style="border:2px;">
+    <div id="footer1">
+        <h3>Cantidad de miembros actuales: 106 mujeres</h3>
+    </div>
+    
     
 </body>
 </html>
